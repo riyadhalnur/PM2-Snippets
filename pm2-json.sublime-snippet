@@ -20,5 +20,5 @@
 ]]></content>
   <tabTrigger>[{</tabTrigger>
   <scope>source.json</scope>
-  <description>Generate a PM2 JSON file for your Node apss</description>
+  <description>Generate a PM2 JSON file for your Node apps</description>
 </snippet>
