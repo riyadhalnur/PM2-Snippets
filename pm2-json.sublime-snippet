@@ -18,7 +18,7 @@
   }
 }]
 ]]></content>
-  <tabTrigger>pm2</tabTrigger>
+  <tabTrigger>[{</tabTrigger>
   <scope>source.json</scope>
   <description>Generate a PM2 JSON file for your Node apss</description>
 </snippet>
