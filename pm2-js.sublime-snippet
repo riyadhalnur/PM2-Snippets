@@ -1,0 +1,19 @@
+<snippet>
+  <content><![CDATA[
+var pm2 = require('pm2');
+
+pm2.connect(function(err) {
+  pm2.start('${1:server.js}', { name: '${2:my-app}' }, function(err, proc) {
+    if (err) { throw new Error('There was a problem starting your application ' + err); }
+
+    pm2.list(function(err, process_list) {
+      if (err) { throw new Error('There was a problem listing your applications ' + err); }
+      console.log(process_list);
+    });
+  });
+});
+]]></content>
+  <tabTrigger>pm2</tabTrigger>
+  <scope>source.js</scope>
+  <description>Generate a PM2 JS file file for your Node apps</description>
+</snippet>
